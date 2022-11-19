@@ -35,7 +35,7 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
-export PS1="\[\033[38;5;13m\]\d\[$(tput sgr0)\], \[$(tput sgr0)\]\[\033[38;5;13m\]\A\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;14m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;14m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;4m\]\w\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;13m\]\d\[$(tput sgr0)\], \[$(tput sgr0)\]\[\033[38;5;13m\]\A\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;14m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;14m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;118m\]\w\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
